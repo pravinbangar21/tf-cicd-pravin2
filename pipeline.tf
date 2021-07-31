@@ -11,17 +11,17 @@ resource "aws_codebuild_project" "tf-plan" {
 
   environment {
     compute_type = "BUILD_GENERAL1_SMALL"
-   # image = "hashicorp/terraform:latest"
-    image = "aws/codebuild/standard:1.0"
+    image = "hashicorp/terraform:latest"
+    #image = "aws/codebuild/standard:1.0"
     type = "LINUX_CONTAINER"
-  #  image_pull_credentials_type = "SERVICE_ROLE"
-    image_pull_credentials_type = "CODEBUILD"
-/*
+    image_pull_credentials_type = "SERVICE_ROLE"
+  #  image_pull_credentials_type = "CODEBUILD"
+
     registry_credential {
       credential = var.docker_credentials
       credential_provider = "SECRETS_MANAGER"
     }
-*/
+
   }
 
   source {
@@ -44,18 +44,18 @@ resource "aws_codebuild_project" "tf-apply" {
 
   environment {
     compute_type = "BUILD_GENERAL1_SMALL"
-   # image = "hashicorp/terraform:latest"
-    image = "aws/codebuild/standard:1.0"
+    image = "hashicorp/terraform:latest"
+  #  image = "aws/codebuild/standard:1.0"
     type = "LINUX_CONTAINER"
-   # image_pull_credentials_type = "SERVICE_ROLE"
-    image_pull_credentials_type = "CODEBUILD"
+    image_pull_credentials_type = "SERVICE_ROLE"
+  #  image_pull_credentials_type = "CODEBUILD"
 
-/*
+
     registry_credential {
       credential = var.docker_credentials
       credential_provider = "SECRETS_MANAGER"
     }
-*/
+
   }
 
   source {
