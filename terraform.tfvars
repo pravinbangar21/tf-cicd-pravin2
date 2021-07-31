@@ -1,5 +1,6 @@
 codestar_credentials = "arn:aws:codestar-connections:us-east-1:709924062641:connection/2da2a185-a18e-4078-9733-6be8a6558133"
-docker_credentials = "arn:aws:secretsmanager:us-east-1:709924062641:secret:tf-cicd-dockerhub-VxILsR"
+docker_credentials = "arn:aws:secretsmanager:us-east-1:709924062641:secret:GitP2-UbaFk4"
+#"arn:aws:secretsmanager:us-east-1:709924062641:secret:tf-cicd-dockerhub-VxILsR"
 
 #codestar_credentials = "arn:aws:codestar-connections:us-east-1:709924062641:connection/76c84d9f-9037-4f06-b46f-d85ab564c2e7"
 #docker_credentials = "arn:aws:secretsmanager:us-east-1:709924062641:secret:tf-cicd-dockerhub-VxILsR"
